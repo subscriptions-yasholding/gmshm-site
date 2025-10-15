@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Global Medical Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #2c3e50;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .company-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d5a5c;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .company-tagline {
+            font-size: 1.1rem;
+            color: #39a0a3;
+            margin-bottom: 60px;
+            font-weight: 500;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .coming-soon {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #2d5a5c;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .description {
+            font-size: 1.3rem;
+            color: #6c757d;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                width: 180px;
+                margin-bottom: 30px;
+            }
+
+            .company-name {
+                font-size: 1.8rem;
+            }
+
+            .company-tagline {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
+
+            .coming-soon {
+                font-size: 3rem;
+            }
+
+            .description {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 150px;
+                margin-bottom: 25px;
+            }
+
+            .company-name {
+                font-size: 1.5rem;
+            }
+
+            .coming-soon {
+                font-size: 2.5rem;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Option 1: Use local logo file (recommended) -->
+    <img src="./logo.svg" alt="Global Medical Solutions" class="logo">
+    
+    <!-- Option 2: Use remote logo URL -->
+    <!-- <img src="https://gmshm.ae/public/images/1664866076-web_logo.svg#" alt="Global Medical Solutions" class="logo"> -->
+    
+    <h1 class="company-name">Global Medical Solutions</h1>
+    <p class="company-tagline">Healthcare Talent & Solutions</p>
+    
+    <h2 class="coming-soon">Coming Soon</h2>
+    
+    <p class="description">
+        We're working on something amazing to better serve your healthcare talent and solutions needs. 
+        Our new website will be launching soon with enhanced features and improved user experience.
+    </p>
+</body>
+</html>
